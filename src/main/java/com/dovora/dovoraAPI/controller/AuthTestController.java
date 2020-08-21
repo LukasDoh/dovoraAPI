@@ -15,21 +15,21 @@ public class AuthTestController {
         return "Public Content.";
     }
 
-    @GetMapping("/user")
+    @GetMapping("/customer")
     @PreAuthorize("hasRole('CUSTOMER') or hasRole('EMPLOYEE') or hasRole('ADMIN')")
     public String userAccess() {
         return "Customer Content.";
     }
 
-    @GetMapping("/mod")
+    @GetMapping("/employee")
     @PreAuthorize("hasRole('EMPLOYEE')")
     public String moderatorAccess() {
-        return "Employee Board.";
+        return "Employee Content.";
     }
 
     @GetMapping("/admin")
     @PreAuthorize("hasRole('ADMIN')")
     public String adminAccess() {
-        return "Admin Board.";
+        return "Admin Content.";
     }
 }
