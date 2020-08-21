@@ -34,6 +34,19 @@ public class CategoryController {
                 orElseThrow(() -> new CategoryNotFoundException(categoryId));
     }
 
+    // Update a category
+    @PutMapping("/categories/{id}")
+    public Category updateCategory(@PathVariable(value = "id") Long categoryId,
+                                   @Valid @RequestBody Category categoryDetails) throws CategoryNotFoundException {
+        Category category = categoryRepository.findById(categoryId)
+                .orElseThrow(() -> new CategoryNotFoundException(categoryId));
+
+        category.setName(categoryDetails.getName());
+        Category updatedCategory = categoryRepository.save(category);
+
+        return updatedCategory;
+    }
+
     // Delete a category
     @DeleteMapping("/categories/{id}")
     public ResponseEntity<?> deleteCategory(@PathVariable(value = "id") Long categoryId) throws CategoryNotFoundException {
