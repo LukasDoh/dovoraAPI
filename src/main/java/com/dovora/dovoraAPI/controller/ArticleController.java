@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * Controller for Rest API route '/articles'
+ * All interactions with table article
+ */
 @RestController
 @CrossOrigin(origins = "http://localhost:4200") // Allow CORS
 public class ArticleController {

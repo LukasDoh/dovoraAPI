@@ -1,5 +1,8 @@
 package com.dovora.dovoraAPI.exception;
 
+/**
+ * Exception if category is not found via id.
+ */
 public class CategoryNotFoundException extends Exception{
 
     private long category_id;

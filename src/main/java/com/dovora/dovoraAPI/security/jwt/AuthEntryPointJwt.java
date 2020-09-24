@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Overrides the default Entry Point to return a Http Error Message
+ */
 @Component
 public class AuthEntryPointJwt implements AuthenticationEntryPoint {
 

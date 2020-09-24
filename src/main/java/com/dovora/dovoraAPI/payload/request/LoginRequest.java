@@ -2,6 +2,9 @@ package com.dovora.dovoraAPI.payload.request;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * structure of login requests
+ */
 public class LoginRequest {
     @NotBlank
     private String username;

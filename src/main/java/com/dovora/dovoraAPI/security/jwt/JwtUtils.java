@@ -10,6 +10,12 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+/**
+ * JSON Web Token Utilities
+ * Generate Token
+ * Get Username by token
+ * validate token
+ */
 @Component
 public class JwtUtils {
     private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);

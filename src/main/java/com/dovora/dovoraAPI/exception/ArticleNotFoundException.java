@@ -1,5 +1,8 @@
 package com.dovora.dovoraAPI.exception;
 
+/**
+ * Exception if article is not found via id.
+ */
 public class ArticleNotFoundException extends Exception {
 
     private long article_id;

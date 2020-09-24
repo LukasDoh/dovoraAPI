@@ -2,6 +2,9 @@ package com.dovora.dovoraAPI.payload.response;
 
 import java.util.List;
 
+/**
+ * Structure for JSON Web Token Response
+ */
 public class JwtResponse {
     private String token;
     private String type = "Bearer";

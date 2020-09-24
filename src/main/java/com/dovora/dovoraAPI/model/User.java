@@ -6,6 +6,9 @@ import javax.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * User model
+ */
 @Entity
 @Table(name="users",
         uniqueConstraints = {

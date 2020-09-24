@@ -4,6 +4,9 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+/**
+ * Article model
+ */
 @Entity
 @SequenceGenerator(name="idSeq", initialValue = 1001, allocationSize = 1)
 @Table(name = "articles")

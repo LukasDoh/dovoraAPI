@@ -3,6 +3,9 @@ package com.dovora.dovoraAPI.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
+/**
+ * Category model
+ */
 @Entity
 @Table(name= "category")
 public class Category {

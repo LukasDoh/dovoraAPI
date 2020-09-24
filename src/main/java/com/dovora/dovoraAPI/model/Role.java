@@ -2,6 +2,9 @@ package com.dovora.dovoraAPI.model;
 
 import javax.persistence.*;
 
+/**
+ * Role model
+ */
 @Entity
 @Table(name = "roles")
 public class Role {

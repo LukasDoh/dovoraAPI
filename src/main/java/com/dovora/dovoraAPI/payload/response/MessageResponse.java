@@ -1,5 +1,8 @@
 package com.dovora.dovoraAPI.payload.response;
 
+/**
+ * Structure for Message responses (errors, warnings)
+ */
 public class MessageResponse {
     private String message;
 

@@ -3,6 +3,9 @@ package com.dovora.dovoraAPI.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
+/**
+ * Customer model
+ */
 @Entity
 @SequenceGenerator(name="custIdSeq", initialValue = 5001, allocationSize = 1)
 @Table(name = "customer")
